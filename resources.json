@@ -1,0 +1,130 @@
+{
+    "resources": [
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "controller/Main.controller.js"
+        },
+        {
+            "name": "controller/View1.controller.js"
+        },
+        {
+            "name": "css/style.css"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "localService/ZGBC_FLEET_RETURN_SRV/metadata.xml"
+        },
+        {
+            "name": "localService/metadata.xml"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "model/models.js"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "tmp/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "tmp/Component.js"
+        },
+        {
+            "name": "tmp/controller/Main.controller.js"
+        },
+        {
+            "name": "tmp/controller/View1.controller.js"
+        },
+        {
+            "name": "tmp/css/style.css"
+        },
+        {
+            "name": "tmp/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "tmp/index.html"
+        },
+        {
+            "name": "tmp/localService/ZGBC_FLEET_RETURN_SRV/metadata.xml"
+        },
+        {
+            "name": "tmp/localService/metadata.xml"
+        },
+        {
+            "name": "tmp/manifest.json"
+        },
+        {
+            "name": "tmp/model/models.js"
+        },
+        {
+            "name": "tmp/utils/Color.js"
+        },
+        {
+            "name": "tmp/utils/Formatter.js"
+        },
+        {
+            "name": "tmp/view/Main.view.xml"
+        },
+        {
+            "name": "tmp/view/View1.view.xml"
+        },
+        {
+            "name": "tmp-dbg/Component.js"
+        },
+        {
+            "name": "tmp-dbg/controller/Main.controller.js"
+        },
+        {
+            "name": "tmp-dbg/controller/View1.controller.js"
+        },
+        {
+            "name": "tmp-dbg/css/style.css"
+        },
+        {
+            "name": "tmp-dbg/model/models.js"
+        },
+        {
+            "name": "tmp-dbg/utils/Color.js"
+        },
+        {
+            "name": "tmp-dbg/utils/Formatter.js"
+        },
+        {
+            "name": "utils/Color-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "utils/Color.js"
+        },
+        {
+            "name": "utils/Formatter-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "utils/Formatter.js"
+        },
+        {
+            "name": "view/Main.view.xml"
+        },
+        {
+            "name": "view/View1.view.xml"
+        }
+    ]
+}

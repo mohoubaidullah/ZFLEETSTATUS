@@ -1,0 +1,75 @@
+<mvc:View controllerName="FleetStatus.controller.View1" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m" xmlns:form="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+					<VBox class="sapUiSmallMargin">
+						<form:SimpleForm id="sF1" editable="true" layout="ResponsiveGridLayout" labelSpanXL="4" labelSpanL="3" labelSpanM="4" labelSpanS="12"
+							adjustLabelSpan="true" emptySpanXL="0" emptySpanL="4" emptySpanM="0" emptySpanS="0" columnsXL="2" columnsL="1" columnsM="1"
+							singleContainerFullSize="false" ariaLabelledBy="Title1">
+							<Label text="Request ID"/>
+							<Input id="Zrecord" value="" width="100px" required="true" submit="onEnter" maxLength="9"/>
+							<Label text="Status"/>
+							<Text text="{/Status}"/>
+							<Label text="Equipment"/>
+							<Text text="{/Zequnr}"/>
+							<Label text="Plate"/>
+							<Text text="{/Zplate}"/>
+							<form:layoutData>
+								<FlexItemData shrinkFactor="0" backgroundDesign="Translucent" styleClass="sapContrastPlus"/>
+							</form:layoutData>
+						</form:SimpleForm>
+					</VBox>
+					<VBox class="sapUiMediumMargin">
+						<form:SimpleForm id="sfDetail" editable="false" layout="ResponsiveGridLayout" title="Fleet Request Status Details" labelSpanXL="4"
+							labelSpanL="4" labelSpanM="12" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="0" emptySpanL="0" emptySpanM="0" emptySpanS="0"
+							columnsXL="2" columnsL="2" columnsM="2" singleContainerFullSize="false">
+							<form:content>
+								<core:Title text="Fleet Request Details"/>
+								<Label text="Request ID"/>
+								<Text text="{/Zrecord}"/>
+								<Label text="Fleet Request Type"/>
+								<Text text="{/Ztype}"/>
+								<Label text="Requested Date"/>
+								<Text text="{ path: '/ZrequestDate', type: 'sap.ui.model.Date', formatOptions: { pattern: 'dd/MM/yyyy' } }"/>
+								<Label text="Requested Time"/>
+								<Text text="{/ZrequestTime}"/>
+								<Label text="Requestor"/>
+								<Text text="{/Zrequestor}"/>
+								<Label text="Transferor"/>
+								<Text text="{/Ztransferor}"/>
+								<Label text="Transferee"/>
+								<Text text="{/Ztransferee}"/>
+								<Label text="From App Date"/>
+								<Text text="{/Zfromappdate}"/>
+								<Label text="From App Time"/>
+								<Text text="{/Zfromapptime}"/>
+								<core:Title text=""/>
+								<Label text="Issue Type"/>
+								<Text text="{/Zissuetype}"/>
+								<Label text="New Vechicle"/>
+								<Text text="{/Znewvehicle}"/>
+								<Label text="Penality"/>
+								<Text text="{/Zpenality}"/>
+								<Label text="From Sales Office"/>
+								<Text text="{/Zfromvkbur}"/>
+								<Label text="From Sales Office"/>
+								<Text text="{/Zfromsodesc}"/>
+								<Label text="To Sales Office"/>
+								<Text text="{/Ztomvkbur}"/>
+								<Label text="To Sales Office"/>
+								<Text text="{/Ztosodesc}"/>
+								<Label text="Remark"/>
+								<Text text="{/Remark}"/>
+							</form:content>
+							<form:layoutData>
+								<FlexItemData shrinkFactor="0" backgroundDesign="Translucent" styleClass="sapThemeMediumText"/>
+							</form:layoutData>
+						</form:SimpleForm>
+					</VBox>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
