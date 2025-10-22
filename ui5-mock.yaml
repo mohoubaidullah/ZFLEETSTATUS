@@ -1,0 +1,42 @@
+specVersion: "3.1"
+metadata:
+  name: fleetstatus
+type: application
+server:
+  customMiddleware:
+    - name: fiori-tools-proxy
+      afterMiddleware: compression
+      configuration:
+        ignoreCertError: false
+        backend:
+          - path: /sap
+            url: https://dev.berain.com.sa:44310/
+            client: "100"
+            destination: DEV_BRN_HEC
+        ui5:
+          path:
+            - /resources
+            - /test-resources
+          url: https://ui5.sap.com
+          version: 1.60.14
+    - name: fiori-tools-appreload
+      afterMiddleware: compression
+      configuration:
+        port: 35729
+        path: webapp
+        delay: 300
+    - name: fiori-tools-preview
+      afterMiddleware: fiori-tools-appreload
+      configuration:
+        component: FleetStatus
+        ui5Theme: sap_fiori_3
+    - name: sap-fe-mockserver
+      beforeMiddleware: csp
+      configuration:
+        mountPath: /
+        services:
+          - urlPath: /sap/opu/odata/sap/ZGBC_FLEET_RETURN_SRV
+            metadataPath: ./webapp/localService/ZGBC_FLEET_RETURN_SRV/metadata.xml
+            mockdataPath: ./webapp/localService/ZGBC_FLEET_RETURN_SRV/data
+            generateMockData: true
+        annotations: []
